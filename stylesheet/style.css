@@ -1,0 +1,162 @@
+/* common css start*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* common css end*/
+
+body{
+    background: linear-gradient(to right, #00c9ff, #92fe9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+}
+
+/* nav start */
+
+nav{
+    width:100%;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(133, 177, 234);
+    display: inline-block;
+    margin-left: 0;
+
+  
+}
+
+
+
+/* nav end  */
+
+
+
+nav ul li{
+    display:inline-block;
+    position: relative;
+
+}
+
+nav ul li a{
+    width: 100%;
+    height: 100%;
+    padding: 15px 35px;
+    color: rgb(22, 21, 21);
+    display: inline-block;
+    font-size: 16px;
+
+
+    
+}
+nav ul li ul{
+    position: absolute;
+    background-color: #eede96;
+    width:200px;
+    height: 50px;
+    opacity:0;
+    visibility: hidden;
+    margin-top: 40px;
+    transition: 0.8s;
+}
+
+nav ul li:hover>.sub_menu{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+nav ul li ul li{
+    display: block;
+    text-align: left;
+
+}
+nav .sub_menu a{
+    border-bottom: 1px solid rgb(241, 238, 238);
+    display: block;
+    transition: 0.5s;
+
+}
+nav .sub_menu li:hover>a{
+    margin-left: 20px;
+    
+
+}
+nav li .sub_menu .sub_menu{
+    left:100%;
+    top:0;
+}
+/* nav menu end*/
+
+.project_blog{
+    width: 1000px;
+    height: 600px;
+    background-image:url(../images/R\ \(4\).jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    text-align: justify;
+    margin:auto;
+    margin-top: 40px;
+
+}
+
+
+.project_blog a:hover{
+    margin-left:20px;
+    background-color: rgb(149, 232, 24);
+}
+.write_blog{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    margin:auto;
+    font-size: 20px;
+    padding: 20px;
+    
+}
+.write_blog a{
+font-family:Arial, Helvetica, sans-serif;
+text-align: none;
+padding-top: 10px;
+width: 100px;
+height: 40px;
+margin-top: 40px;
+display: inline-block;
+background-color: rgb(89, 103, 233);
+color: rgb(18, 1, 1);
+border-radius: 10px;
+transition: 0.5s;
+font-size: 18px;
+}
+.write_blog a:hover{
+margin-left:20px;
+background-color: rgb(239, 223, 183);
+}
+
+.button_blog a{
+    color:rgb(24, 23, 23);
+    padding:10px;
+    display:inline-block;
+    text-decoration: none;
+    background-color: rgba(47, 10, 178, 0.909);
+    text-align:center;
+    width:100px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-top: 20px,40px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 18px;
+    font-style: oblique;
+    transition: 0.5s;
+}
+.button_blog a:hover{
+margin-left:40px;
+background-color: rgb(239, 223, 183);
+}
